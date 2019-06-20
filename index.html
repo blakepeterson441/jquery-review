@@ -6,16 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery-3.4.1.min.js"></script>
     <script src="client.js"></script>
+    <script src="client2.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>jQuery Review</title>
 </head>
 <body>
     <header><h1>Playfair</h1></header>
     <main>
-        <h2>Students</h2>
-        <ul id="students">
-            <!-- jQuery will fill this in -->
-        </ul>
+        <section>
+            <h2>Students</h2>
+            <ul id="students">
+                <!-- jQuery will fill this in -->
+            </ul>
+        </section>
+        <section>
+            <h2>Task List</h2>
+            <h3>Add Task</h3>
+            <form>
+                <label>Task Name:</label>
+                <input id="task-name" type="text" />
+                <button id="add-task" type="submit">Add Task</button>
+            </form>
+            <h3>All Tasks</h3>
+            <ul id="task-list">
+                <!-- jQuery will fill this in as we add task -->
+            </ul>
+        </section>
     </main>
 </body>
 </html>

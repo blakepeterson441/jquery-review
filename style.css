@@ -27,18 +27,6 @@ h1 {
     margin: 0;
 }
 
-#about {
-    background-color: darkgrey;
-}
-
-.info {
-    text-align: center;
-}
-
-.info ul {
-    list-style-type: none;
-}
-
-.text-light {
-    color: white;
+.important {
+    background-color: goldenrod;
 }
