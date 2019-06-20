@@ -1,0 +1,44 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: darkcyan;
+    margin: 0;
+}
+
+section {
+    background-color: azure;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#about {
+    background-color: darkgrey;
+}
+
+.info {
+    text-align: center;
+}
+
+.info ul {
+    list-style-type: none;
+}
+
+.text-light {
+    color: white;
+}
