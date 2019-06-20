@@ -31,9 +31,9 @@ function onReady() {
 // It will show an alert saying that student is awesome!
 // this is contextual. showAwesomeAlert calls 
 function showAwesomeAlert(event){
-    //console.log('Event:', event);
+    // console.log('Event:', event);
     // In the event handler (always functions) 'this' is what generated the event
-    //console.log('This:', this);
+    // console.log('This:', this);
     let studentName = $(this).text();
     alert(`${studentName} is awesome!`);
 }
