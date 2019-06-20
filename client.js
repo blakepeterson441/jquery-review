@@ -32,7 +32,7 @@ function onReady() {
 // this is contextual. showAwesomeAlert calls 
 function showAwesomeAlert(event){
     console.log('event', event);
-    // In the event handler 'this' is what generated the event
+    // In the event handler (always functions) 'this' is what generated the event
     console.log('This:', this);
     alert('Check the console...');
 }
