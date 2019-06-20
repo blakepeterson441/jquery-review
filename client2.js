@@ -5,6 +5,7 @@ function onReady(){
     $('#add-task').on('click', addTaskHandler);
     $('#task-list').on('click', '.delete', deleteTask);
     $('#task-list').on('click', '.flag', flagTask);
+    $('#clear-tasks').on('click', deleteAllTasks);
 }
 
 function addTaskHandler(event){
@@ -50,4 +51,11 @@ function flagTask(event) {
 
     // take out parent and the button itself will change colors
     $(this).parent().toggleClass('important');
+}
+
+// This will remove all tasks from the list when we click the
+// remove all button.
+function deleteAllTasks(event){
+    $('#task-list').empty();
+
 }
