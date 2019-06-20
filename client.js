@@ -11,8 +11,30 @@ $(document).ready(onReady);
 // When the DOM is ready (i.e. when the page loads), 
 // we will render (or display) our students
 function onReady() {
-    console.log('jQuery works');
+
     renderStudentList(playfair);
+
+    // Need to select something already on the DOM
+    // Can filter the event to something new (dynamically generated)
+    // Do this with the 2nd arg to 'on' function ('.student')
+    $('#students').on('click', '.student', showAwesomeAlert);
+
+    // Shouldn't do this! because later it will break
+    // $('#students').on('click', showAwesomeAlert);
+
+    // This is what generated the event, the document being ready
+    // console.log('this is onReady is the document:', this);
+    
+}
+
+// This function will be called when we click on a student
+// It will show an alert saying that student is awesome!
+// this is contextual. showAwesomeAlert calls 
+function showAwesomeAlert(event){
+    console.log('event', event);
+    // In the event handler 'this' is what generated the event
+    console.log('This:', this);
+    alert('Check the console...');
 }
 
 // This function will take in an array of students,
@@ -26,5 +48,5 @@ function renderStudentList(studentList) {
 // This function will take in a single student,
 // and append it to the '#student' id on the HTML page.
 function renderStudent(student) {
-    $('#students').append(`<li>${student}</li>`);
+    $('#students').append(`<li class="student">${student}</li>`);
 }
